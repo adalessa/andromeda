@@ -23,7 +23,7 @@ class AndromedaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Andromeda::class, function ($app) {
+        $this->app->singleton('andromeda', function ($app) {
             return new Andromeda;
         });
     }
